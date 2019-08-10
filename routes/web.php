@@ -18,3 +18,39 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::resource('clubs', 'Club\ClubController')
+->only([
+    'index',
+    'show',
+]);
+
+
+Route::resource('teams', 'Team\TeamController')
+->only([
+    'index',
+    'show',
+]);
+
+
+Route::resource('playergroups', 'Team\PlayerGroupController')
+->only([
+    'index',
+    'show',
+]);
+
+
+Route::resource('players', 'Player\PlayerController')
+->only([
+    'index',
+    'show',
+]);
+
+
+
+
+
+
+
