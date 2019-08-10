@@ -28,7 +28,8 @@ class Player extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function group() {
+    public function group()
+    {
         return $this->belongsTo(PlayerGroup::class);
     }
 }

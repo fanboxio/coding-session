@@ -28,21 +28,24 @@ class Team extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function club() {
+    public function club()
+    {
         return $this->belongsTo(Club::class);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function groups() {
+    public function groups()
+    {
         return $this->hasMany(PlayerGroup::class);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
      */
-    public function players() {
+    public function players()
+    {
         return $this->hasManyThrough(Players::class, PlayerGroup::class);
     }
 }

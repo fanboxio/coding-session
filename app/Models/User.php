@@ -49,14 +49,16 @@ class User extends Authenticatable
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function club() {
+    public function club()
+    {
         return $this->belongsTo(Club::class);
     }
 
     /**
      * @return bool
      */
-    public function isSuperAdmin() {
+    public function isSuperAdmin()
+    {
         return $this->is_admin === true;
     }
 }

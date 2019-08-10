@@ -28,14 +28,16 @@ class Club extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function users() {
+    public function users()
+    {
         return $this->hasMany(User::class);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function teams() {
+    public function teams()
+    {
         return $this->hasMany(Team::class);
     }
 }
