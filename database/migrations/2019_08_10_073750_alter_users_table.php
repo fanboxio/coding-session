@@ -14,8 +14,8 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('club_id');
-            $table->boolean('is_admin');
+            $table->unsignedBigInteger('club_id')->nullable();
+            $table->boolean('is_admin')->default(false);
         });
     }
 
