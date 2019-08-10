@@ -1,10 +1,10 @@
 <?php
 
-namespace App\App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PlayerGroup extends Model
+class Player extends Model
 {
     //
 }
