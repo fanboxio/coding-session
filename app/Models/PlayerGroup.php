@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class PlayerGroup extends Model
 {
+    use LogsActivity;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -14,6 +17,13 @@ class PlayerGroup extends Model
     protected $fillable = [
         'name', 'team_id',
     ];
+
+    /**
+     * The attributes that are loggable by activitylog.
+     *
+     * @var array
+     */
+    protected static $logAttributes = ['name'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
