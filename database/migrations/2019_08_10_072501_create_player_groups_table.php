@@ -15,7 +15,19 @@ class CreatePlayerGroupsTable extends Migration
     {
         Schema::create('player_groups', function (Blueprint $table) {
             $table->bigIncrements('id');
+
+            $table->string('name');
+            $table->unsignedBigInteger('team_id');
+
             $table->timestamps();
+
+            /*
+             * Foreign constraints
+             */
+            $table->foreign('team_id')
+                ->references('id')->on('teams')
+                ->onDelete('cascade');
+
         });
     }
 
