@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'club_id',
+    ];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function club() {
