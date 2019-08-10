@@ -5,6 +5,9 @@ https://laravel.com/docs/5.8/telescope
 https://laravel.com/docs/5.8/controllers#single-action-controllers
 https://www.youtube.com/watch?v=oP78eq3v2d4
 
+## Validation
+https://laravel.com/docs/5.8/validation#form-request-validation
+
 ## Useful tips for Laravel Developing
 https://www.youtube.com/watch?v=FxACh4X-Xc0
 
