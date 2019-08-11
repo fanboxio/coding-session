@@ -25,6 +25,8 @@ Route::resource('clubs', 'Club\ClubController')
 ->only([
     'index',
     'show',
+    'edit',
+    'destroy',
 ]);
 
 

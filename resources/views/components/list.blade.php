@@ -7,12 +7,15 @@
         <th>
             Name
         </th>
+        <th>
+            Options
+        </th>
     </tr>
     </thead>
 
     <tbody>
     @foreach ($data as $item)
-        <list-item :route="$route" :model="$item"></list-item>
+        <list-item :routePrefix="$route" :model="$item"></list-item>
     @endforeach
     </tbody>
 </table>

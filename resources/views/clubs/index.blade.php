@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <list :data="$clubs" route="clubs.show"></list>
+    <list :data="$clubs" route="clubs"></list>
 
 @endsection
